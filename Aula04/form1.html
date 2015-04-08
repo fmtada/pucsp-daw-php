@@ -1,0 +1,70 @@
+<html>
+<head>
+  <title>Cadastramento de cliente</title>
+</head>
+<body>
+	<form method="post" action="xxx.php">
+		<label for="login">Digite seu login:</label> 
+		<input type="text" name="login" id="login" placeholder="Seu Usuário" required autofocus>
+		<br>
+		<label for="senha">Senha:</label>
+		<input type="password" name="senha" id="senha" required>
+		<br><br>
+		
+		<label for="nome">Nome do cliente:</label>
+		<input type="text" name="nome" id="nome" value="Nome do usuário" required><br>
+		<label for="cpf">CPF:</label>
+		<input type="text" name="cpf" id="cpf" title = "Formato: 999.999.999-99" pattern="\d{3}\.\d{3}\.\d{3}\-\d{2}" required><br>
+		<label for="rg">RG:</label>
+		<input type="text" name="rg" id="rg" autocomplete="off" required><br>
+		<label for="endereco">Endereço:</label>
+		<input type="text" name="enderedo" id="endereco" required>
+		<br><br>
+		
+		Estado:<br>		
+		<input type="radio" name="estado" id="estado.sp" value="SP" checked>
+		<label for="estado.sp">São Paulo</label><br>
+		<input type="radio" name="estado" id="estado.rj" value="RJ">
+		<label for="estado.rj">Rio de Janeiro</label><br>
+		<input type="radio" name="estado" id="estado.mg" value="MG">
+		<label for="estado.mg">Minas Gerais</label>
+		<br><br>
+		
+		Classificação do usuário:<br>		
+		<input type="radio" name="classificacao" id="classif.1" value="1" checked>
+		<label for="classif.1">Aluno</label><br>
+		<input type="radio" name="classificacao" id="classif.2" value="2">
+		<label for="classif.2">Funcionário</label><br>
+		<input type="radio" name="classificacao" id="classif.3" value="3">
+		<label for="classif.3">Administrador</label>
+		<br><br>
+		
+		Sexo:<br>
+		<input type="radio" name="sexo" id="sexo.h" value="H" checked>
+		<label for="sexo.h">Homem<label><br>
+		<input type="radio" name="sexo" id="sexo.m" value="M">
+		<label for="sexo.m">Mulher<label>
+		<br><br>
+		
+		Estado civil:<br>		
+		<input type="radio" name="estcivil" id="estcivil.1" value="1" checked>
+		<label for="estcivil.1">Solteiro</label><br>
+		<input type="radio" name="estcivil" id="estcivil.2" value="2">
+		<label for="estcivil.2">Casado</label><br>
+		<input type="radio" name="estcivil" id="estcivil.3" value="3">
+		<label for="estcivil.3">Desquitado</label><br>
+		<input type="radio" name="estcivil" id="estcivil.4" value="4">
+		<label for="estcivil.4">Divorciado</label><br>
+		<input type="radio" name="estcivil" id="estcivil.5" value="5">
+		<label for="estcivil.5">Viúvo</label><br>
+		<input type="radio" name="estcivil" id="estcivil.6" value="6">
+		<label for="estcivil.6">Separado</label><br>
+		<input type="radio" name="estcivil" id="estcivil.7" value="7">
+		<label for="estcivil.7">Amigado</label><br>
+		<br><br>
+		
+		<input type="reset" value="Reset">
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html> 
